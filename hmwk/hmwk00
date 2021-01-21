@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<img src='images/mexicoText.jpg'
+        alt = "picture of a mexican flag on a globe"
+        id = "poopoo">
+        <a href = "https://distillery.com/blog/mexico-city-2019/">link to source for picture</a>
+
+
+<div class = "geography">
+    <p><h2>Geography</h2></p>
+    <img src='images/mexicoGeography.jpg'
+        alt = "picture of a mexican flag on a globe"
+        id = "peepee">
+        <a href = "https://www.thoughtco.com/geography-of-mexico-1435215">link to source for picture</a>
+    
+        <ul>Top five states with the most people in them
+            <li>Mexico 15 million+</li>
+            <li>Mexico city 89. million+</li>
+            <li>Veracruz 7.6 million+</li>
+            <li>Jalisco 7.3 million+</li>
+            <li>Puebla 5.7 million+</li>
+        </ul>
+
+</div>
+
+<div class = "history">
+    <p><h2>History</h2></p>
+    <img src = "images/mexicopymarid.jpg"
+    alt = "picture of a mexican pyramid"
+    id = "poopee">
+    <a href = "https://www.britannica.com/place/Mexico">link to source for picture</a>
+    
+    <p>A table of wars in mexico</p>
+    <pre style="font-style:normal">
+        <table>
+            <tr>
+                <th>Name of war</th>
+                <th>Outcome</th>
+            </tr>
+
+            <tr>
+                <td>Mexican war of independence</td>
+                <td>Victory</td>
+            </tr>
+
+            <tr>
+                <td>Texas Revolution</td>
+                <td>Defeat</td>
+            </tr>
+
+            <tr>
+                <td>Mexican Drug War</td>
+                <td>Ongoing</td>
+            </tr>
+        </table>
+    </pre>
+
+</div>
+
+<div class = "landmarks">
+    <p><h2>Landmarks</h2></p>
+    <img src = "images/mexicoLandmark.jpg"
+    alt = "picture of a mxican landmark"
+    id = "peepoo">
+    <a href = "https://theculturetrip.com/north-america/mexico/articles/mexico-citys-12-must-see-landmarks/">link to source for picture</a>
+    
+    <p>A table of landmarks in mexico</p>
+    <table id = "table2">
+        <tr>
+            <th>Name of landmark</th>
+            <th>Location</th>
+        </tr>
+
+        <tr>
+            <td>Angel de la independencia</td>
+            <td>Mexico City</td>
+        </tr>
+
+        <tr>
+            <td>Chichen Itza</td>
+            <td>Yucatan Peninsula</td>
+        </tr>
+
+        <tr>
+            <td>Xochicalco</td>
+            <td>Morelos</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+
+<footer>
+    
+<p id = "justBecause">random text I left in the footer so i can change its forground color</p>
+<p>the data for the populations came from "https://en.wikipedia.org/wiki/List_of_Mexican_states_by_population"</p>
+<p>the data for the wars came from "https://en.wikipedia.org/wiki/List_of_wars_involving_Mexico"</p>
+<p>the data for the landmarks came from "https://www.pointsandtravel.com/famous-landmarks-in-mexico/"</p>
+
+</footer>
+
+
+</html>
