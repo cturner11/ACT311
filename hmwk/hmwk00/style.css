@@ -1,36 +1,36 @@
-#poopoo{
+#poopoo{/* mexico text picture */
     height: 500px;
     width: 100%;
 }
-#peepee{
+#peepee{/* mexico geography picture */
     height: 500px;
     width: 500px;
 }
-#poopee{
+#poopee{/* mexico pymarid picture */
     height: 500px;
     width: 500px;
 }
-#peepoo{
+#peepoo{/* mexico landmark picture */
     height: 500px;
     width: 500px;
 }
-.geography{
+.geography{/* geography class */
     color:green;
 }
-.history{
+.history{/* history class */
     color: white;
     font-style: italic;
 }
-.landmarks{
+.landmarks{/* landmarks class */
     color: red;
 }
-body{background-color: darkgray;}
-img{
+body{background-color: darkgray;}/* overall color for the body */
+img{/* all images */
     border: 5px solid;
 }
-#table2{
+#table2{/* second table */
     border-collapse: collapse;
 }
-#justBecause{
+#justBecause{/* a bit of text in the footer */
     color:cyan;
 }
