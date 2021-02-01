@@ -1,0 +1,19 @@
+#banner {
+    height: 500px;
+    width: 100%;
+  }
+
+#geoPicture{
+  height: 500px;
+  width: 500px;
+}
+
+#historyPicture{
+  height: 500px;
+  width: 500px;
+}
+
+#landmarkPicture{
+  height: 500px;
+  width: 500px; 
+}
