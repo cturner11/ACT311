@@ -29,6 +29,7 @@ function fillTable(){
         if(x.type == "Lab"){
             row.classList.add("bg-warning");
         }
+        table.classList.add("table-striped");
     });
 
 
