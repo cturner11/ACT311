@@ -13,27 +13,26 @@
 </head>
 <body>
     <script src = "index.js"></script>
-
     <div class="container-fluid text-center" id="container1">
         <div class="row" id="row1">
-            <div class="col-12" id="col1">
-                <div class="input-group mb-3">
-                    <div class="dropdown">
-                        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Pick a professor
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#" onclick="loadJoke('general')">General</a></li>
-                          <li><a class="dropdown-item" href="#" onclick="loadJoke('programming');">Programming</a></li>
-                          <li><a class="dropdown-item" href="#" onclick="loadJoke('knock-knock');">Knock-Knock</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="col-4" id="col1">
+                <select class="form-select" id="mySelect" onChange="getClasses(this)" aria-label="Default select example">
+                    <option>Pick a Professor</option>
+                                
+                </select>
+            </div>
+            <div class="col-4">
+                
+            </div>
+            <div class="col-4" id="col2">
+                <ul class="list-group" id="dataField">
+
+                </ul>
             </div>
         </div>
     </div>
-
-    <script>fillDropdown()</script>
+    
+    <script> fillDropdown() </script>
     
 </body>
 </html>
