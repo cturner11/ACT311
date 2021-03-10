@@ -1,24 +1,34 @@
-async function fillDropdown(x){
-    const responce = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/"+x);
-    const classes = await responce.json();
-    return classes;
+async function errorCheck(x){
+    const resp = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/"+x);
+    //onsole.log(resp);
+    if (resp.status >= 200 && resp.status < 300) {
+        //console.log("good");
+        return true;
+    } else {
+        //console.log("bad");
+        return false;
+    }
 }
 
-
-
-async function fillFirstDropdown(){
-    const responce = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/all.json");
-    const departments = await responce.json();
-    return departments;
-}
-fillFirstDropdown().then(departments => {
-   console.log(departments);
+async function addDpt(){
+    
+    const departments = await fillFirstDropdown();
     var dpt = [];
     var currentdpt = "";
     for(x in departments){
-        currentdpt = departments[x];
-        if(!dpt.includes(currentdpt)){
-            dpt.push(currentdpt);
+        var err = await errorCheck(departments[x]["filename"]);
+        if(err){
+            currentdpt = departments[x];
+            if(!dpt.includes(currentdpt)){
+                dpt.push(currentdpt);
+            }
+        }else{
+            var ul = document.getElementById("dataField");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(departments[x]["filename"]));
+            li.classList.add("list-group-item");
+
+            ul.appendChild(li);
         }
     }
     var sel = document.querySelector("#myDept");
@@ -29,7 +39,21 @@ fillFirstDropdown().then(departments => {
        sel.add(option); 
     }
     sel.classList.remove("d-none");
-})
+}
+
+async function fillDropdown(x){
+    const responce = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/"+x);
+    const classes = await responce.json();
+    return classes;
+}
+
+async function fillFirstDropdown(){
+    const responce = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/bad.json");
+    const departments = await responce.json();
+    return departments;
+}
+
+
 
 function addTeachers(dpt){
     //console.log(dpt);
@@ -68,7 +92,7 @@ function getClasses(butts){
     var file = department.options[department.selectedIndex].id;
     fillDropdown(file).then(classes => {
         var theClasses = [];
-        document.getElementById("dataField").innerHTML = "";
+        //document.getElementById("dataField").innerHTML = "";
         for(i in classes){
             if(classes[i]["instructor"]==name){
                 var string = classes[i]["course"]+"::"+classes[i]["title"]+"::"+classes[i]["days"][0]+"::"+classes[i]["times"][0]+"::"+classes[i]["crn"];
