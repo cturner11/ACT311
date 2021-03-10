@@ -10,6 +10,39 @@ async function errorCheck(x){
     }
 }
 
+async function addType(){
+    const departments = await fillFirstDropdown();
+    var type = [];
+    currentType = "";
+    for(x in departments){
+        var err = await errorCheck(departments[x]["filename"]);
+        if(err){
+            currentType = departments[x];
+            if(!type.includes(currentType)){
+                type.push(currentType);
+            }
+        }
+    }
+    var uniquetypes = [];
+    var sel = document.querySelector("#myType");
+    for (i in type) {
+        var data = await fillDropdown(type[i]["filename"]);
+        for(j in data){
+            var classType = data[j]["type"];
+            if(!uniquetypes.includes(classType)){
+                uniquetypes.push(classType);
+                var option = document.createElement("option");
+                option.text = classType;
+                option.id = classType;
+                sel.add(option);
+            }
+        }
+
+    }
+    //console.log(uniquetypes);
+    sel.classList.remove("d-none");
+}
+
 async function addDpt(){
     
     const departments = await fillFirstDropdown();
@@ -53,8 +86,6 @@ async function fillFirstDropdown(){
     return departments;
 }
 
-
-
 function addTeachers(dpt){
     //console.log(dpt);
     var selected= dpt.options[dpt.selectedIndex];
@@ -81,18 +112,46 @@ function addTeachers(dpt){
 });
 }
 
-//if name = "" then forloop through classes to pull all info that contains that instructors name
-//list of courses
-//sorted by day
-//then time (AM PM sensitave)
-//display some course data
+async function getclassesByType(classType){
+    const departments = await fillFirstDropdown();
+    var selectedType = classType.options[classType.selectedIndex].id
+    
+    var type = [];
+    currentType = "";
+    for (x in departments) {
+        var err = await errorCheck(departments[x]["filename"]);
+        if (err) {
+            currentType = departments[x];
+            if (!type.includes(currentType)) {
+                type.push(currentType);
+            }
+        }
+    }
+    var uniquetypes = [];
+    var sel = document.querySelector("#myType");
+    var div = document.getElementById("container2");
+    var inner = "<div class='col-3 text-white bg-dark'>course</div><div class='col-3 text-white bg-dark'>class title</div><div class='col-2 text-white bg-dark'>\n\
+                        days</div><div class='col-2 text-white bg-dark'>times</div><div class='col-2 text-white bg-dark'>CRN</div>";
+    for (i in type) {
+        var data = await fillDropdown(type[i]["filename"]);
+        for (j in data) {
+            var classType = data[j]["type"];
+            if (classType == selectedType){
+                inner+="<div class='col-3'>"+data[j]["course"]+"</div><div class='col-3'>"+data[j]["title"]+"</div><div class='col-2'>"+data[j]["days"]+
+                        "</div><div class='col-2'>"+data[j]["times"]+"</div><div class='col-2'>"+data[j]["crn"]+"</div>";
+            }
+        }
+    }
+    div.innerHTML = inner;
+}
+
 function getClasses(butts){
     var name =  butts.options[butts.selectedIndex].id;
+    console.log(name);
     var department = document.querySelector("#myDept");
     var file = department.options[department.selectedIndex].id;
     fillDropdown(file).then(classes => {
         var theClasses = [];
-        //document.getElementById("dataField").innerHTML = "";
         for(i in classes){
             if(classes[i]["instructor"]==name){
                 var string = classes[i]["course"]+"::"+classes[i]["title"]+"::"+classes[i]["days"][0]+"::"+classes[i]["times"][0]+"::"+classes[i]["crn"];
@@ -100,7 +159,7 @@ function getClasses(butts){
             }  
         }
         sortDay(theClasses);
-        //console.log(theClasses);
+        console.log(theClasses);
         var div = document.getElementById("container2");
         var inner = "<div class='col-3 text-white bg-dark'>course</div><div class='col-3 text-white bg-dark'>class title</div><div class='col-2 text-white bg-dark'>\n\
                         days</div><div class='col-2 text-white bg-dark'>times</div><div class='col-2 text-white bg-dark'>CRN</div>";

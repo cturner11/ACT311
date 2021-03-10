@@ -21,10 +21,17 @@
                     <option>Pick a department</option>
                                 
                 </select>
-                <select class="form-select d-none" id="mySelect" onChange="getClasses(this)" aria-label="Default select example">
+                <select class="form-select mb-2 d-none" id="mySelect" onChange="getClasses(this)" aria-label="Default select example">
                     <option>Pick a Professor</option>
-                                
+
                 </select>
+                <p><h2>pick department or type</h2>
+                <select class="form-select mb-2 " id="myType" onChange="getclassesByType(this)" aria-label="Default select example">
+                    <option>Pick a class type</option>
+
+                </select>
+
+ 
             </div>
             <div class="col-1">
                 
@@ -44,5 +51,6 @@
 
     </ul>
     <script> addDpt() </script>
+    <script> addType() </script>
 </body>
 </html>
