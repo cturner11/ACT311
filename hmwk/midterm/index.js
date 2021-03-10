@@ -36,24 +36,23 @@ function getClasses(butts){
         document.getElementById("dataField").innerHTML = "";
         for(i in classes){
             if(classes[i]["instructor"]==name){
-                var string = classes[i]["course"]+"::"+classes[i]["title"]+"::"+classes[i]["days"][0]+"::"+classes[i]["times"][0];
+                var string = classes[i]["course"]+"::"+classes[i]["title"]+"::"+classes[i]["days"][0]+"::"+classes[i]["times"][0]+"::"+classes[i]["crn"];
                 theClasses.push(string);   
             }  
         }
         sortDay(theClasses);
         console.log(theClasses);
+        var div = document.getElementById("container2");
+        var inner = "<div class='col-3 text-white bg-dark'>course</div><div class='col-3 text-white bg-dark'>class title</div><div class='col-2 text-white bg-dark'>\n\
+                        days</div><div class='col-2 text-white bg-dark'>times</div><div class='col-2 text-white bg-dark'>CRN</div>";
         for(i in theClasses){
-            var ul = document.getElementById("dataField");
-            var li = document.createElement("li");
-            var cut = theClasses[i].replaceAll("::","  ");
-            if(theClasses[i][theClasses[i].length-1]=="-"){
-                cut = cut.slice(0,-1)+ "online";
+            var cut = theClasses[i].split("::");
+            if(cut[3]=="-"){
+                cut[3] = "Online"
             }
-            li.appendChild(document.createTextNode(cut));
-            li.classList.add("list-group-item");
-
-            ul.appendChild(li);
+            inner+="<div class='col-3'>"+cut[0]+"</div><div class='col-3'>"+cut[1]+"</div><div class='col-2'>"+cut[2]+"</div><div class='col-2'>"+cut[3]+"</div><div class='col-2'>"+cut[4]+"</div>";
         }
+        div.innerHTML = inner;
     })   
 }
 
@@ -118,3 +117,4 @@ function sortTime(a,b){
         }
     }
 }
+
