@@ -17,7 +17,11 @@
     <div class="container-fluid text-center" id="container1">
         <div class="row" id="row1">
             <div class="col-4" id="col1">
-                <select class="form-select" id="mySelect" onChange="getClasses(this)" aria-label="Default select example">
+                <select class="form-select mb-2 d-none" id="myDept" onChange="addTeachers(this)" aria-label="Default select example">
+                    <option>Pick a department</option>
+                                
+                </select>
+                <select class="form-select d-none" id="mySelect" onChange="getClasses(this)" aria-label="Default select example">
                     <option>Pick a Professor</option>
                                 
                 </select>
@@ -39,7 +43,6 @@
             </div>
         </div>
     </div>
-    
-    <script> fillDropdown() </script>
+
 </body>
 </html>
