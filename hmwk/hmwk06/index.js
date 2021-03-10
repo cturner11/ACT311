@@ -1,28 +1,85 @@
-async function fillDropdown(){
-    const responce = await fetch("/users/cturner11/act311/hmwk/hmwk06/CSMP.json")
-    const classes = await responce.json()
+async function errorCheck(x){
+    const resp = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/"+x);
+    //onsole.log(resp);
+    if (resp.status >= 200 && resp.status < 300) {
+        //console.log("good");
+        return true;
+    } else {
+        //console.log("bad");
+        return false;
+    }
+}
+
+async function addDpt(){
+    
+    const departments = await fillFirstDropdown();
+    var dpt = [];
+    var currentdpt = "";
+    for(x in departments){
+        var err = await errorCheck(departments[x]["filename"]);
+        if(err){
+            currentdpt = departments[x];
+            if(!dpt.includes(currentdpt)){
+                dpt.push(currentdpt);
+            }
+        }else{
+            var ul = document.getElementById("dataField");
+            var li = document.createElement("li");
+            li.appendChild(document.createTextNode(departments[x]["filename"]));
+            li.classList.add("list-group-item");
+
+            ul.appendChild(li);
+        }
+    }
+    var sel = document.querySelector("#myDept");
+    for(i in dpt){
+       var option = document.createElement("option");
+       option.text = dpt[i]["dept"];
+       option.id = dpt[i]["filename"];
+       sel.add(option); 
+    }
+    sel.classList.remove("d-none");
+}
+
+async function fillDropdown(x){
+    const responce = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/"+x);
+    const classes = await responce.json();
     return classes;
 }
 
+async function fillFirstDropdown(){
+    const responce = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/bad.json");
+    const departments = await responce.json();
+    return departments;
+}
 
-fillDropdown().then(classes => {
-   console.log(classes)
+
+
+function addTeachers(dpt){
+    //console.log(dpt);
+    var selected= dpt.options[dpt.selectedIndex];
+    
+    fillDropdown(selected.id).then(classes => {
+    console.log(classes);
     var instructors = [];
     var currentInst = "";
     for(x in classes){
-        currentInst = classes[x]["instructor"]
+        currentInst = classes[x]["instructor"];
         if(!instructors.includes(currentInst)){
             instructors.push(currentInst);
         }
     }
     var sel = document.querySelector("#mySelect");
+    sel.innerHTML = "";
     for(i in instructors){
        var option = document.createElement("option");
        option.text = instructors[i];
        option.id = instructors[i];
        sel.add(option); 
     }
-})
+    sel.classList.remove("d-none");
+});
+}
 
 //if name = "" then forloop through classes to pull all info that contains that instructors name
 //list of courses
@@ -30,30 +87,31 @@ fillDropdown().then(classes => {
 //then time (AM PM sensitave)
 //display some course data
 function getClasses(butts){
-    var name =  butts.options[butts.selectedIndex].id
-    fillDropdown().then(classes => {
+    var name =  butts.options[butts.selectedIndex].id;
+    var department = document.querySelector("#myDept");
+    var file = department.options[department.selectedIndex].id;
+    fillDropdown(file).then(classes => {
         var theClasses = [];
-        document.getElementById("dataField").innerHTML = "";
+        //document.getElementById("dataField").innerHTML = "";
         for(i in classes){
             if(classes[i]["instructor"]==name){
-                var string = classes[i]["course"]+"::"+classes[i]["title"]+"::"+classes[i]["days"][0]+"::"+classes[i]["times"][0];
+                var string = classes[i]["course"]+"::"+classes[i]["title"]+"::"+classes[i]["days"][0]+"::"+classes[i]["times"][0]+"::"+classes[i]["crn"];
                 theClasses.push(string);   
             }  
         }
         sortDay(theClasses);
-        console.log(theClasses);
+        //console.log(theClasses);
+        var div = document.getElementById("container2");
+        var inner = "<div class='col-3 text-white bg-dark'>course</div><div class='col-3 text-white bg-dark'>class title</div><div class='col-2 text-white bg-dark'>\n\
+                        days</div><div class='col-2 text-white bg-dark'>times</div><div class='col-2 text-white bg-dark'>CRN</div>";
         for(i in theClasses){
-            var ul = document.getElementById("dataField");
-            var li = document.createElement("li");
-            var cut = theClasses[i].replaceAll("::","  ");
-            if(theClasses[i][theClasses[i].length-1]=="-"){
-                cut = cut.slice(0,-1)+ "online";
+            var cut = theClasses[i].split("::");
+            if(cut[3]=="-"){
+                cut[3] = "Online"
             }
-            li.appendChild(document.createTextNode(cut));
-            li.classList.add("list-group-item");
-
-            ul.appendChild(li);
+            inner+="<div class='col-3'>"+cut[0]+"</div><div class='col-3'>"+cut[1]+"</div><div class='col-2'>"+cut[2]+"</div><div class='col-2'>"+cut[3]+"</div><div class='col-2'>"+cut[4]+"</div>";
         }
+        div.innerHTML = inner;
     })   
 }
 
@@ -118,3 +176,4 @@ function sortTime(a,b){
         }
     }
 }
+
