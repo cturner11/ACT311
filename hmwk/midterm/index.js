@@ -1,28 +1,61 @@
-async function fillDropdown(){
-    const responce = await fetch("/users/cturner11/act311/hmwk/hmwk06/CSMP.json")
-    const classes = await responce.json()
+async function fillDropdown(x){
+    const responce = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/"+x);
+    const classes = await responce.json();
     return classes;
 }
 
 
-fillDropdown().then(classes => {
-   console.log(classes)
+
+async function fillFirstDropdown(){
+    const responce = await fetch("/users/cturner11/act311/hmwk/midterm/jsons/all.json");
+    const departments = await responce.json();
+    return departments;
+}
+fillFirstDropdown().then(departments => {
+   console.log(departments);
+    var dpt = [];
+    var currentdpt = "";
+    for(x in departments){
+        currentdpt = departments[x];
+        if(!dpt.includes(currentdpt)){
+            dpt.push(currentdpt);
+        }
+    }
+    var sel = document.querySelector("#myDept");
+    for(i in dpt){
+       var option = document.createElement("option");
+       option.text = dpt[i]["dept"];
+       option.id = dpt[i]["filename"];
+       sel.add(option); 
+    }
+    sel.classList.remove("d-none");
+})
+
+function addTeachers(dpt){
+    //console.log(dpt);
+    var selected= dpt.options[dpt.selectedIndex];
+    
+    fillDropdown(selected.id).then(classes => {
+    console.log(classes);
     var instructors = [];
     var currentInst = "";
     for(x in classes){
-        currentInst = classes[x]["instructor"]
+        currentInst = classes[x]["instructor"];
         if(!instructors.includes(currentInst)){
             instructors.push(currentInst);
         }
     }
     var sel = document.querySelector("#mySelect");
+    sel.innerHTML = "";
     for(i in instructors){
        var option = document.createElement("option");
        option.text = instructors[i];
        option.id = instructors[i];
        sel.add(option); 
     }
-})
+    sel.classList.remove("d-none");
+});
+}
 
 //if name = "" then forloop through classes to pull all info that contains that instructors name
 //list of courses
@@ -30,8 +63,10 @@ fillDropdown().then(classes => {
 //then time (AM PM sensitave)
 //display some course data
 function getClasses(butts){
-    var name =  butts.options[butts.selectedIndex].id
-    fillDropdown().then(classes => {
+    var name =  butts.options[butts.selectedIndex].id;
+    var department = document.querySelector("#myDept");
+    var file = department.options[department.selectedIndex].id;
+    fillDropdown(file).then(classes => {
         var theClasses = [];
         document.getElementById("dataField").innerHTML = "";
         for(i in classes){
@@ -41,7 +76,7 @@ function getClasses(butts){
             }  
         }
         sortDay(theClasses);
-        console.log(theClasses);
+        //console.log(theClasses);
         var div = document.getElementById("container2");
         var inner = "<div class='col-3 text-white bg-dark'>course</div><div class='col-3 text-white bg-dark'>class title</div><div class='col-2 text-white bg-dark'>\n\
                         days</div><div class='col-2 text-white bg-dark'>times</div><div class='col-2 text-white bg-dark'>CRN</div>";
