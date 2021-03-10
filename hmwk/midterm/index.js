@@ -58,7 +58,7 @@ async function addDpt(){
         }else{
             var ul = document.getElementById("dataField");
             var li = document.createElement("li");
-            li.appendChild(document.createTextNode(departments[x]["filename"]));
+            li.appendChild(document.createTextNode("Bad Files "+departments[x]["filename"]));
             li.classList.add("list-group-item");
 
             ul.appendChild(li);
