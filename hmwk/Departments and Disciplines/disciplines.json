@@ -1,0 +1,230 @@
+[
+    {
+        "value": "ALL",
+        "text": "All Subjects"
+    },
+    {
+        "value": "ACC",
+        "text": "Accounting"
+    },
+    {
+        "value": "ALH",
+        "text": "Allied Health"
+    },
+    {
+        "value": "ACT",
+        "text": "Applications of Computer Tech"
+    },
+    {
+        "value": "MAS",
+        "text": "Applied Science"
+    },
+    {
+        "value": "ART",
+        "text": "Art"
+    },
+    {
+        "value": "BIO",
+        "text": "Biology"
+    },
+    {
+        "value": "CHE",
+        "text": "Chemistry"
+    },
+    {
+        "value": "CIN",
+        "text": "Cinema"
+    },
+    {
+        "value": "CLS",
+        "text": "Clinical Laboratory Science"
+    },
+    {
+        "value": "COM",
+        "text": "Communication Studies"
+    },
+    {
+        "value": "CSC",
+        "text": "Computer Science"
+    },
+    {
+        "value": "CET",
+        "text": "Construction Engineering Techn"
+    },
+    {
+        "value": "CED",
+        "text": "Continuing Education   (WI)"
+    },
+    {
+        "value": "CRJ",
+        "text": "Criminal Justice"
+    },
+    {
+        "value": "ESC",
+        "text": "Earth Science"
+    },
+    {
+        "value": "ECO",
+        "text": "Economics"
+    },
+    {
+        "value": "EDU",
+        "text": "Education"
+    },
+    {
+        "value": "EGT",
+        "text": "Engineering Technology"
+    },
+    {
+        "value": "ENG",
+        "text": "English"
+    },
+    {
+        "value": "ETC",
+        "text": "English Technical Communicatio"
+    },
+    {
+        "value": "ENT",
+        "text": "Entrepreneurship"
+    },
+    {
+        "value": "FIN",
+        "text": "Finance"
+    },
+    {
+        "value": "GBA",
+        "text": "General Business"
+    },
+    {
+        "value": "GEO",
+        "text": "Geography"
+    },
+    {
+        "value": "HDA",
+        "text": "Health Data Analytics"
+    },
+    {
+        "value": "HIF",
+        "text": "Health Information Management"
+    },
+    {
+        "value": "HIS",
+        "text": "History"
+    },
+    {
+        "value": "HON",
+        "text": "Honors Program"
+    },
+    {
+        "value": "HUM",
+        "text": "Humanities"
+    },
+    {
+        "value": "MIM",
+        "text": "Information Management"
+    },
+    {
+        "value": "JOU",
+        "text": "Journalism"
+    },
+    {
+        "value": "LAT",
+        "text": "Legal Assistant"
+    },
+    {
+        "value": "MGT",
+        "text": "Management"
+    },
+    {
+        "value": "MET",
+        "text": "Manufacturing Engineering Tech"
+    },
+    {
+        "value": "MKT",
+        "text": "Marketing"
+    },
+    {
+        "value": "MAT",
+        "text": "Mathematics"
+    },
+    {
+        "value": "MTE",
+        "text": "Medical Technology"
+    },
+    {
+        "value": "MIL",
+        "text": "Military Science"
+    },
+    {
+        "value": "MUS",
+        "text": "Music"
+    },
+    {
+        "value": "NUR",
+        "text": "Nursing"
+    },
+    {
+        "value": "PHL",
+        "text": "Philosophy"
+    },
+    {
+        "value": "PED",
+        "text": "Physical Education"
+    },
+    {
+        "value": "PTA",
+        "text": "Physical Therapist Assistant"
+    },
+    {
+        "value": "PHY",
+        "text": "Physics"
+    },
+    {
+        "value": "POL",
+        "text": "Policing"
+    },
+    {
+        "value": "PSC",
+        "text": "Political Science"
+    },
+    {
+        "value": "PSY",
+        "text": "Psychology"
+    },
+    {
+        "value": "RDG",
+        "text": "Reading"
+    },
+    {
+        "value": "RSM",
+        "text": "Recreation Sport Management"
+    },
+    {
+        "value": "SWK",
+        "text": "Social Work"
+    },
+    {
+        "value": "SOC",
+        "text": "Sociology"
+    },
+    {
+        "value": "SFM",
+        "text": "Sport and Fitness Management"
+    },
+    {
+        "value": "SCM",
+        "text": "Supply Chain Management"
+    },
+    {
+        "value": "TSL",
+        "text": "Teaching Second Language"
+    },
+    {
+        "value": "THR",
+        "text": "Theatre"
+    },
+    {
+        "value": "UNV",
+        "text": "University Orientation"
+    }
+]
