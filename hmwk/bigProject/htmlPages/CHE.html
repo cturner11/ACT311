@@ -1,0 +1,5439 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+<title>MWSU :: Missouri Western State University</title>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.16.custom.css"/>
+<link rel="stylesheet" type="text/css" href="trans_banner/style.css" />
+<link rel="stylesheet" type="text/css" href="css/jquery.slider.css" rel="stylesheet" />
+<!--<link rel="stylesheet" type="text/css" href="/css/custom.css" rel="stylesheet" />-->
+<link rel="stylesheet" type="text/css" href="schedule.css" rel="stylesheet" />
+
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" href="/css/ie/megamenu_ie.css" />
+<![endif]-->
+<!--[if lt IE 7]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE7.js"></script>
+<![endif]-->
+<!--[if IE]><link rel="stylesheet" type="text/css" href="/css/ie/mwsu-ie.css" /><![endif]-->
+
+<!--<script type="text/javascript" src="/js/clearfield.js"></script>-->
+<script type="text/javascript" src="js/jquery.js"></script><!-- jQuery -->
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.easing.compatibility.js"></script>
+<script type="text/javascript" src="js/jquery.slider.min.js"></script>
+<script type="text/javascript" src="js/megamenu_plugins.js"></script><!-- Mega Menu Plugins (scroller, form, hoverIntent) -->
+<script type="text/javascript" src="js/megamenu.js"></script><!-- Mega Menu Script -->
+<script type="text/javascript" src="js/jquery.ui.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+<script type="text/javascript" src="trans_banner/trans-banner.min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/flowplayer/flowplayer-3.2.9.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$( "#accordion" ).accordion({
+			"event": "mouseover"
+		});
+
+		$("#accordion").accordion("option", "icons", { 'header': 'ui-icon-triangle-1-w', 'headerSelected': 'ui-icon-triangle-1-s'});
+	});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function($){
+		$('.megamenu').megaMenuReloaded({
+			menu_speed_show : 500, // Time (in milliseconds) to show a drop down
+			menu_speed_hide : 500, // Time (in milliseconds) to hide a drop down
+			menu_speed_delay : 500, // Time (in milliseconds) before showing a drop down
+			menu_effect : 'hover_slide', // Drop down effect, choose between 'hover_fade', 'hover_slide', 'click_fade', 'click_slide', 'open_close_fade', 'open_close_slide'
+			menu_click_outside : 0, // Clicks outside the drop down close it (1 = true, 0 = false)
+			menu_show_onload : 0, // Drop down to show on page load (type the number of the drop down, 0 for none)
+			menubar_trigger : 0 // Show the menu trigger (button to show / hide the menu bar), only for the fixed version of the menu (1 = show, 0 = hide)
+		});
+	});
+</script>
+
+<link type="text/css" href="css/scrollable-horizontal.css" rel="stylesheet" />
+<link type="text/css" href="css/scrollable-buttons.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+<script type="text/javascript">
+    $(function() {
+          $(".scrollable").scrollable({circular: true});
+    });
+</script>
+<style type="text/css">
+/*<!--*/
+.ui-dialog-titlebar-close {
+	visibility: hidden;
+}
+#maincontent { margin-top: 2em; }
+/*-->*/
+</style>
+</head>
+<body>
+	
+<!--
+NOTES:
+	* "autocomplete" attribute is invalid; set in javascript to avoid validation errors
+	* always use relative paths when possible - CHANGE THIS LATER(JAKE)-
+	* <form id="searchform" method="get" action="http://www.missouriwestern.edu/google_search.asp" autocomplete="off">	
+-->
+
+<table border="0" width="100%" cellspacing="0" cellpadding="6" style="background-color:black;">
+	<tr>
+		<td>
+			<table align="center" border="0" width="970" cellspacing="0" cellpadding="0">
+				<tr>
+					<td width="509" style="width: 970px" class="style1">
+				<a href="http://www.missouriwestern.edu">
+				<img border="0" src="images/header/logo.png" width="404" height="76" alt="Missouri Western State University" /></a></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+	<div id="maincontent">
+		
+<h1>Search Results</h1>
+<button type="button" onclick="location.href='Default.asp?tck=202120';">Search Again</button>
+<table class="results">
+	<tr>
+		<th>CRN</th>
+		<th>Course</th>
+		<th>Sec</th>
+		<th>Type</th>
+		<th>Title</th>
+		<th>Hrs</th>
+		<th>Days</th>
+		<th style="width: 150px;">Times</th>
+		<th>Room</th>
+		<th>Instructor</th>
+	</tr>
+	
+		<tr class="list_row">
+			<td>20394</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=01">CHE101</a>
+			</td>
+			<td>01</td>
+			<td>Classroom w/Online Component</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=01">Introductory Chemistry</a></td>
+			<td>4</td>
+			<td>MW</td>
+			<td>11:00AM-12:20PM</td>
+			<td>Spratt Hall 216</td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+			<tr class="list_row">
+				<td colspan="6">&nbsp;</td>
+				<td>MW</td>
+				<td>11:00AM-12:20PM</td>
+				<td>Spratt Hall 214</td>
+				<td>&nbsp;</td>
+			</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 90-->
+						Maximum Enrollment: 96<br />
+						Section Seats Available: 11<br />
+						
+							Crosslist Seats Available: 13
+					</span>
+					
+				</span>
+				(Must enroll in Lecture and Lab)&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE101 80
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>21268</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=03">CHE101</a>
+			</td>
+			<td>03</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=03">Introductory Chemistry</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>9:00AM-10:50AM</td>
+			<td>Remington Hall 317</td>
+			<td>Mbarak, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 2<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20396</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=04">CHE101</a>
+			</td>
+			<td>04</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=04">Introductory Chemistry</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>12:00PM-1:50PM</td>
+			<td>Remington Hall 317</td>
+			<td>Mbarak, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20397</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=05">CHE101</a>
+			</td>
+			<td>05</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=05">Introductory Chemistry</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>2:00PM-3:50PM</td>
+			<td>Remington Hall 317</td>
+			<td>Mbarak, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 7<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22566</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=06">CHE101</a>
+			</td>
+			<td>06</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=06">Introductory Chemistry</a></td>
+			<td>0</td>
+			<td>W</td>
+			<td>1:00PM-2:50PM</td>
+			<td>Remington Hall 317</td>
+			<td>Munoz Franco, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 4<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>25414</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=40">CHE101</a>
+			</td>
+			<td>40</td>
+			<td>100% Online</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=40">Introductory Chemistry</a></td>
+			<td>4</td>
+			<td></td>
+			<td>-</td>
+			<td>Online Course </td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Distance Education (Online)
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>25415</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=41">CHE101</a>
+			</td>
+			<td>41</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=41">Introductory Chemistry</a></td>
+			<td>0</td>
+			<td></td>
+			<td>-</td>
+			<td>Online Course </td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				You must register for both a Lecture and Lab for this course&nbsp;
+					Lab kit purchase required.&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					
+				</span>
+				<span class="course_term">
+					Distance Education (Online)
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>25555</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=60">CHE101</a>
+			</td>
+			<td>60</td>
+			<td>100% Online</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=60">Introductory Chemistry</a></td>
+			<td>4</td>
+			<td></td>
+			<td>-</td>
+			<td>Online Course </td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 3<br />
+						
+					</span>
+					
+				</span>
+				You must register for both a Lecture and Lab for this course&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Wintersession Online
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 12/10/2020</span>
+					<span class="course_ends">Course Ends: 1/15/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>25556</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=61">CHE101</a>
+			</td>
+			<td>61</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=61">Introductory Chemistry</a></td>
+			<td>0</td>
+			<td></td>
+			<td>-</td>
+			<td>Online Course </td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 3<br />
+						
+					</span>
+					
+				</span>
+				You must register for both a Lecture and Lab for this course&nbsp;
+					Lab kit purchase required.&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					
+				</span>
+				<span class="course_term">
+					Wintersession Online
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 12/10/2020</span>
+					<span class="course_ends">Course Ends: 1/15/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>25416</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=80">CHE101</a>
+			</td>
+			<td>80</td>
+			<td>Classroom w/Online Component</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=101&seq_number_key=80">Intro to Chemistry (Honors)</a></td>
+			<td>4</td>
+			<td>MW</td>
+			<td>11:00AM-12:20PM</td>
+			<td>Spratt Hall 216</td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+			<tr class="list_row">
+				<td colspan="6">&nbsp;</td>
+				<td>MW</td>
+				<td>11:00AM-12:20PM</td>
+				<td>Spratt Hall 214</td>
+				<td>&nbsp;</td>
+			</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 6-->
+						Maximum Enrollment: 96<br />
+						Section Seats Available: 2<br />
+						
+							Crosslist Seats Available: 13
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE101 01
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20405</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=111&seq_number_key=01">CHE111</a>
+			</td>
+			<td>01</td>
+			<td>Classroom w/Online Component</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=111&seq_number_key=01">General Chemistry I</a></td>
+			<td>5</td>
+			<td>MW</td>
+			<td>11:00AM-12:20PM</td>
+			<td>Agenstein Hall 330</td>
+			<td>Mikita, N</td>
+		</tr>
+		
+			<tr class="list_row">
+				<td colspan="6">&nbsp;</td>
+				<td>R</td>
+				<td>11:00AM-11:55AM</td>
+				<td>Spratt Hall 216</td>
+				<td>&nbsp;</td>
+			</tr>
+		
+			<tr class="list_row">
+				<td colspan="6">&nbsp;</td>
+				<td>R</td>
+				<td>11:00AM-11:55AM</td>
+				<td>Spratt Hall 214</td>
+				<td>&nbsp;</td>
+			</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 40-->
+						Maximum Enrollment: 48<br />
+						Section Seats Available: 4<br />
+						
+							Crosslist Seats Available: 7
+					</span>
+					
+				</span>
+				(Must enroll in Lecture and Lab)&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE111 81
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20407</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=111&seq_number_key=02">CHE111</a>
+			</td>
+			<td>02</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=111&seq_number_key=02">General Chemistry I</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>9:30AM-12:20PM</td>
+			<td>Remington Hall 311</td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 2<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>21714</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=111&seq_number_key=03">CHE111</a>
+			</td>
+			<td>03</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=111&seq_number_key=03">General Chemistry I</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>2:00PM-4:50PM</td>
+			<td>Remington Hall 311</td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 6<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20406</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=111&seq_number_key=81">CHE111</a>
+			</td>
+			<td>81</td>
+			<td>Classroom w/Online Component</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=111&seq_number_key=81">General Chemistry I (Honors)</a></td>
+			<td>5</td>
+			<td>MW</td>
+			<td>11:00AM-12:20PM</td>
+			<td>Agenstein Hall 330</td>
+			<td>Mikita, N</td>
+		</tr>
+		
+			<tr class="list_row">
+				<td colspan="6">&nbsp;</td>
+				<td>R</td>
+				<td>11:00AM-11:55AM</td>
+				<td>Spratt Hall 216</td>
+				<td>&nbsp;</td>
+			</tr>
+		
+			<tr class="list_row">
+				<td colspan="6">&nbsp;</td>
+				<td>R</td>
+				<td>11:00AM-11:55AM</td>
+				<td>Spratt Hall 214</td>
+				<td>&nbsp;</td>
+			</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 8-->
+						Maximum Enrollment: 48<br />
+						Section Seats Available: 3<br />
+						
+							Crosslist Seats Available: 7
+					</span>
+					
+				</span>
+				(Must enroll in Lecture and Lab)&nbsp;
+					Lecture Section 81 Restricted to Honors students only.&nbsp;
+					Honors students may enroll in any lab section.&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE111 01
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24742</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=112&seq_number_key=01">CHE112</a>
+			</td>
+			<td>01</td>
+			<td>Lecture, 100% in Classroom</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=112&seq_number_key=01">Problem Solving for Gen Chem I</a></td>
+			<td>1</td>
+			<td>R</td>
+			<td>1:00PM-1:55PM</td>
+			<td>Agenstein Hall 326</td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 20-->
+						Maximum Enrollment: 20<br />
+						Section Seats Available: 14<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20409</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=120&seq_number_key=01">CHE120</a>
+			</td>
+			<td>01</td>
+			<td>Classroom w/Online Component</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=120&seq_number_key=01">General Chemistry II</a></td>
+			<td>5</td>
+			<td>MW</td>
+			<td>9:30AM-10:50AM</td>
+			<td>Agenstein Hall 324</td>
+			<td>Woodford, J</td>
+		</tr>
+		
+			<tr class="list_row">
+				<td colspan="6">&nbsp;</td>
+				<td>R</td>
+				<td>11:00AM-11:50AM</td>
+				<td>Agenstein Hall 324</td>
+				<td>&nbsp;</td>
+			</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 54-->
+						Maximum Enrollment: 54<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				(Must enroll in Lecture and Lab)&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20411</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=120&seq_number_key=02">CHE120</a>
+			</td>
+			<td>02</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=120&seq_number_key=02">General Chemistry II</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>8:00AM-10:50AM</td>
+			<td>Remington Hall 305</td>
+			<td>Lorimor, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 18-->
+						Maximum Enrollment: 18<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20412</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=120&seq_number_key=03">CHE120</a>
+			</td>
+			<td>03</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=120&seq_number_key=03">General Chemistry II</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>2:00PM-4:50PM</td>
+			<td>Remington Hall 305</td>
+			<td>Woodford, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 18-->
+						Maximum Enrollment: 18<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20410</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=120&seq_number_key=04">CHE120</a>
+			</td>
+			<td>04</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=120&seq_number_key=04">General Chemistry II</a></td>
+			<td>0</td>
+			<td>W</td>
+			<td>2:00PM-4:50PM</td>
+			<td>Remington Hall 305</td>
+			<td>Lorimor, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 18-->
+						Maximum Enrollment: 18<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24743</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=121&seq_number_key=01">CHE121</a>
+			</td>
+			<td>01</td>
+			<td>Lecture, 100% in Classroom</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=121&seq_number_key=01">Problem Solving for GenChem II</a></td>
+			<td>1</td>
+			<td>M</td>
+			<td>2:00PM-2:55PM</td>
+			<td>Agenstein Hall 330</td>
+			<td>Woodford, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 20-->
+						Maximum Enrollment: 20<br />
+						Section Seats Available: 3<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>25288</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=308&seq_number_key=01">CHE308</a>
+			</td>
+			<td>01</td>
+			<td>Classroom w/Online Component</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=308&seq_number_key=01">History/Philosophy of Science</a></td>
+			<td>3</td>
+			<td>MW</td>
+			<td>12:30PM-1:50PM</td>
+			<td>Popplewell Hall 207</td>
+			<td>DesAutels, L</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 4-->
+						Maximum Enrollment: 13<br />
+						Section Seats Available: 0<br />
+						
+							Crosslist Seats Available: -1
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							BIO308 01, PHL308 01
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20413</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=310&seq_number_key=01">CHE310</a>
+			</td>
+			<td>01</td>
+			<td>Classroom w/Online Component</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=310&seq_number_key=01">Organic Chemistry I</a></td>
+			<td>3</td>
+			<td>MW</td>
+			<td>9:30AM-10:50AM</td>
+			<td>Agenstein Hall 330</td>
+			<td>Rhoad, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 36-->
+						Maximum Enrollment: 36<br />
+						Section Seats Available: 18<br />
+						
+					</span>
+					
+				</span>
+				Book charges are added to this section as part of the barnes&nbsp;
+					& Noble First Day Program. Further information can be found&nbsp;
+					in your Canvas.&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20414</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=311&seq_number_key=01">CHE311</a>
+			</td>
+			<td>01</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=311&seq_number_key=01">Organic Chemistry Laboratory I</a></td>
+			<td>2</td>
+			<td>MW</td>
+			<td>2:00PM-4:50PM</td>
+			<td>Remington Hall 308</td>
+			<td>Rhoad, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 18-->
+						Maximum Enrollment: 18<br />
+						Section Seats Available: 6<br />
+						
+					</span>
+					
+				</span>
+				(Must be accompanied by Chemistry 310)&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20415</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=311&seq_number_key=02">CHE311</a>
+			</td>
+			<td>02</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=311&seq_number_key=02">Organic Chemistry Laboratory I</a></td>
+			<td>2</td>
+			<td>TR</td>
+			<td>9:30AM-12:20PM</td>
+			<td>Remington Hall 308</td>
+			<td>Rhoad, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 18-->
+						Maximum Enrollment: 18<br />
+						Section Seats Available: 10<br />
+						
+					</span>
+					
+				</span>
+				(Must be accompanied by Chemistry 310)&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20416</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=312&seq_number_key=01">CHE312</a>
+			</td>
+			<td>01</td>
+			<td>Classroom w/Online Component</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=312&seq_number_key=01">Organic Chemistry II</a></td>
+			<td>3</td>
+			<td>MW</td>
+			<td>9:30AM-10:50AM</td>
+			<td>Agenstein Hall 123</td>
+			<td>Lorimor, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 18-->
+						Maximum Enrollment: 18<br />
+						Section Seats Available: 5<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20417</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=313&seq_number_key=01">CHE313</a>
+			</td>
+			<td>01</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=313&seq_number_key=01">Organic Chemistry Lab II</a></td>
+			<td>2</td>
+			<td>TR</td>
+			<td>2:00PM-4:50PM</td>
+			<td>Remington Hall 308</td>
+			<td>Lorimor, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 18-->
+						Maximum Enrollment: 18<br />
+						Section Seats Available: 7<br />
+						
+					</span>
+					
+				</span>
+				(Must be accompanied by Chemistry 312)&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20420</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=326&seq_number_key=03">CHE326</a>
+			</td>
+			<td>03</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=326&seq_number_key=03">Instrumental Analysis</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>9:30AM-12:20PM</td>
+			<td>Remington Hall 301</td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 8-->
+						Maximum Enrollment: 8<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24907</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=326&seq_number_key=04">CHE326</a>
+			</td>
+			<td>04</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=326&seq_number_key=04">Instrumental Analysis</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>2:00PM-4:50PM</td>
+			<td>Remington Hall 301</td>
+			<td>Rhoad, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 8-->
+						Maximum Enrollment: 8<br />
+						Section Seats Available: 2<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20418</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=326&seq_number_key=40">CHE326</a>
+			</td>
+			<td>40</td>
+			<td>100% Online</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=326&seq_number_key=40">Instrumental Analysis</a></td>
+			<td>4</td>
+			<td></td>
+			<td>-</td>
+			<td>Online Course </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 24-->
+						Maximum Enrollment: 24<br />
+						Section Seats Available: 10<br />
+						
+					</span>
+					
+				</span>
+				(Must be accompanied by Chemistry 326 Lab)&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Distance Education (Online)
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22604</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=340&seq_number_key=01">CHE340</a>
+			</td>
+			<td>01</td>
+			<td>Lecture, 100% in Classroom</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=340&seq_number_key=01">Foundations of Physical Chem</a></td>
+			<td>4</td>
+			<td>MW</td>
+			<td>12:30PM-1:50PM</td>
+			<td>Agenstein Hall 323</td>
+			<td>Woodford, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 9-->
+						Maximum Enrollment: 9<br />
+						Section Seats Available: 4<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24226</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=340&seq_number_key=02">CHE340</a>
+			</td>
+			<td>02</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=340&seq_number_key=02">Foundations of Physical Chem</a></td>
+			<td>0</td>
+			<td>T</td>
+			<td>9:30AM-12:20PM</td>
+			<td>Agenstein Hall 339</td>
+			<td>Woodford, J</td>
+		</tr>
+		
+			<tr class="list_row">
+				<td colspan="6">&nbsp;</td>
+				<td>T</td>
+				<td>9:30AM-12:20PM</td>
+				<td>Agenstein Hall 326</td>
+				<td>&nbsp;</td>
+			</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 9-->
+						Maximum Enrollment: 9<br />
+						Section Seats Available: 4<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20422</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=370&seq_number_key=01">CHE370</a>
+			</td>
+			<td>01</td>
+			<td>Classroom w/Online Component</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=370&seq_number_key=01">Biochemistry I</a></td>
+			<td>4</td>
+			<td>MW</td>
+			<td>9:30AM-10:50AM</td>
+			<td>Agenstein Hall 328</td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 36-->
+						Maximum Enrollment: 36<br />
+						Section Seats Available: 11<br />
+						
+					</span>
+					
+				</span>
+				(Must be accompanied by Chemistry 370 Lab)&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>23023</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=370&seq_number_key=02">CHE370</a>
+			</td>
+			<td>02</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=370&seq_number_key=02">Biochemistry I</a></td>
+			<td>0</td>
+			<td>R</td>
+			<td>9:30AM-12:20PM</td>
+			<td>Remington Hall 305</td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 18-->
+						Maximum Enrollment: 18<br />
+						Section Seats Available: 1<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20424</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=370&seq_number_key=03">CHE370</a>
+			</td>
+			<td>03</td>
+			<td>Lab</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=370&seq_number_key=03">Biochemistry I</a></td>
+			<td>0</td>
+			<td>R</td>
+			<td>2:00PM-4:50PM</td>
+			<td>Remington Hall 305</td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 18-->
+						Maximum Enrollment: 18<br />
+						Section Seats Available: 10<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+						<span class="course_linked">You must register for both a Lecture and Lab for this course. </span>
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>21857</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=380&seq_number_key=40">CHE380</a>
+			</td>
+			<td>40</td>
+			<td>100% Online</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=380&seq_number_key=40">Environmental Chem & Chem Mgmt</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td>Online Course </td>
+			<td>Clapp, G</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 20-->
+						Maximum Enrollment: 20<br />
+						Section Seats Available: -1<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Distance Education (Online)
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20431</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=01">CHE450</a>
+			</td>
+			<td>01</td>
+			<td>Independent Study</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=01">Independent Research/Project</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td>Arranged ARRG</td>
+			<td>Hiley, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 3-->
+						Maximum Enrollment: 3<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20432</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=02">CHE450</a>
+			</td>
+			<td>02</td>
+			<td>Independent Study</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=02">Independent Research/Project</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td>Arranged </td>
+			<td>Hiley, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 3-->
+						Maximum Enrollment: 3<br />
+						Section Seats Available: 2<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20433</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=03">CHE450</a>
+			</td>
+			<td>03</td>
+			<td>Independent Study</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=03">Independent Research/Project</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 3-->
+						Maximum Enrollment: 3<br />
+						Section Seats Available: 3<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20434</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=04">CHE450</a>
+			</td>
+			<td>04</td>
+			<td>Independent Study</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=04">Independent Research/Project</a></td>
+			<td>4</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20435</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=05">CHE450</a>
+			</td>
+			<td>05</td>
+			<td>Independent Study</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=05">Independent Research/Project</a></td>
+			<td>5</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>25618</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=06">CHE450</a>
+			</td>
+			<td>06</td>
+			<td>Independent Study</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=450&seq_number_key=06">Independent Research/Project</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td>Arranged ARRG</td>
+			<td>Hiley, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 1-->
+						Maximum Enrollment: 1<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Full</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Second Session
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 3/8/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>21862</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=470&seq_number_key=01">CHE470</a>
+			</td>
+			<td>01</td>
+			<td>Lecture, 100% in Classroom</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=470&seq_number_key=01">Biochemistry II</a></td>
+			<td>3</td>
+			<td>MW</td>
+			<td>8:00AM-9:20AM</td>
+			<td>Agenstein Hall 330</td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 25-->
+						Maximum Enrollment: 25<br />
+						Section Seats Available: 9<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24963</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=475&seq_number_key=01">CHE475</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=475&seq_number_key=01">Internship in Chemistry</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Staff</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 1-->
+						Maximum Enrollment: 1<br />
+						Section Seats Available: 1<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20437</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=01">CHE490</a>
+			</td>
+			<td>01</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=01">Research in Chemistry</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 10<br />
+						Section Seats Available: 5<br />
+						
+							Crosslist Seats Available: 10
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE490 80
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20438</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=02">CHE490</a>
+			</td>
+			<td>02</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=02">Research in Chemistry</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 10<br />
+						Section Seats Available: 5<br />
+						
+							Crosslist Seats Available: 10
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE490 81
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20439</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=03">CHE490</a>
+			</td>
+			<td>03</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=03">Research in Chemistry</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 10<br />
+						Section Seats Available: 5<br />
+						
+							Crosslist Seats Available: 10
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE490 82
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22291</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=04">CHE490</a>
+			</td>
+			<td>04</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=04">Research in Chemistry</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Hiley, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 5<br />
+						Section Seats Available: 5<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22292</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=05">CHE490</a>
+			</td>
+			<td>05</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=05">Research in Chemistry</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Hiley, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 5<br />
+						Section Seats Available: 5<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22293</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=06">CHE490</a>
+			</td>
+			<td>06</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=06">Research in Chemistry</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Hiley, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 5<br />
+						Section Seats Available: 5<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22294</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=07">CHE490</a>
+			</td>
+			<td>07</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=07">Research in Chemistry</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Lorimor, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 5<br />
+						Section Seats Available: 5<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22295</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=08">CHE490</a>
+			</td>
+			<td>08</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=08">Research in Chemistry</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Lorimor, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 5<br />
+						Section Seats Available: 5<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22296</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=09">CHE490</a>
+			</td>
+			<td>09</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=09">Research in Chemistry</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Lorimor, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 5<br />
+						Section Seats Available: 5<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22389</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=10">CHE490</a>
+			</td>
+			<td>10</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=10">Research in Chemistry</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 2-->
+						Maximum Enrollment: 2<br />
+						Section Seats Available: 2<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22390</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=11">CHE490</a>
+			</td>
+			<td>11</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=11">Research in Chemistry</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 2-->
+						Maximum Enrollment: 2<br />
+						Section Seats Available: 1<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22391</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=12">CHE490</a>
+			</td>
+			<td>12</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=12">Research in Chemistry</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 2-->
+						Maximum Enrollment: 2<br />
+						Section Seats Available: 1<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22392</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=13">CHE490</a>
+			</td>
+			<td>13</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=13">Research in Chemistry</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Rhoad, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22393</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=14">CHE490</a>
+			</td>
+			<td>14</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=14">Research in Chemistry</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Rhoad, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22394</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=15">CHE490</a>
+			</td>
+			<td>15</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=15">Research in Chemistry</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Rhoad, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>23390</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=16">CHE490</a>
+			</td>
+			<td>16</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=16">Research in Chemistry</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22396</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=17">CHE490</a>
+			</td>
+			<td>17</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=17">Research in Chemistry</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22397</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=18">CHE490</a>
+			</td>
+			<td>18</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=18">Research in Chemistry</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Svojanovsky, S</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22398</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=19">CHE490</a>
+			</td>
+			<td>19</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=19">Research in Chemistry</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Woodford, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: -2<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22399</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=20">CHE490</a>
+			</td>
+			<td>20</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=20">Research in Chemistry</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Woodford, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22400</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=21">CHE490</a>
+			</td>
+			<td>21</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=21">Research in Chemistry</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Woodford, J</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22401</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=22">CHE490</a>
+			</td>
+			<td>22</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=22">Research in Chemistry</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Clapp, G</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 2-->
+						Maximum Enrollment: 2<br />
+						Section Seats Available: 2<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22402</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=23">CHE490</a>
+			</td>
+			<td>23</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=23">Research in Chemistry</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Clapp, G</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 2-->
+						Maximum Enrollment: 2<br />
+						Section Seats Available: 1<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>22403</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=24">CHE490</a>
+			</td>
+			<td>24</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=24">Research in Chemistry</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Clapp, G</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 2-->
+						Maximum Enrollment: 2<br />
+						Section Seats Available: 2<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20444</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=80">CHE490</a>
+			</td>
+			<td>80</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=80">Research In Chemistry (Honors)</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 10<br />
+						Section Seats Available: 5<br />
+						
+							Crosslist Seats Available: 10
+					</span>
+					
+				</span>
+				Restricted to Honors students only.&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE490 01
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20445</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=81">CHE490</a>
+			</td>
+			<td>81</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=81">Research In Chemistry (Honors)</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 10<br />
+						Section Seats Available: 5<br />
+						
+							Crosslist Seats Available: 10
+					</span>
+					
+				</span>
+				Restricted to Honors students only.&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE490 02
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>20446</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=82">CHE490</a>
+			</td>
+			<td>82</td>
+			<td>Independent Research</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=490&seq_number_key=82">Research In Chemistry (Honors)</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 5-->
+						Maximum Enrollment: 10<br />
+						Section Seats Available: 5<br />
+						
+							Crosslist Seats Available: 10
+					</span>
+					
+				</span>
+				Restricted to Honors students only.&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+						<span class="course_xl">
+							
+							This course is crosslisted with:
+							CHE490 03
+						</span>
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>25432</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=650&seq_number_key=01">CHE650</a>
+			</td>
+			<td>01</td>
+			<td>Lecture, 100% in Classroom</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CHE&crse_number=650&seq_number_key=01">Analytic Method Devel & Valid</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Ducey, M</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 12-->
+						Maximum Enrollment: 12<br />
+						Section Seats Available: 9<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					 
+								<!-- span class="course_fees">ADDITIONAL FEE: &nbsp;&nbsp;()
+								</span -->
+							
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24081</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=412&seq_number_key=01">CLS412</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=412&seq_number_key=01">Clinical Lab Science Theory</a></td>
+			<td>5</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24082</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=415&seq_number_key=01">CLS415</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=415&seq_number_key=01">Clinical Chem/Urinalysis II</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24083</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=417&seq_number_key=01">CLS417</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=417&seq_number_key=01">Clinical Hematology II</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24089</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=419&seq_number_key=01">CLS419</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=419&seq_number_key=01">Clinical Microbiology II</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24084</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=423&seq_number_key=01">CLS423</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=423&seq_number_key=01">Clinical Immunohematology II</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24085</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=431&seq_number_key=01">CLS431</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=431&seq_number_key=01">Clinical Lab Management II</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24086</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=443&seq_number_key=01">CLS443</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=443&seq_number_key=01">Clin Immunohematology Lab II</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 1-->
+						Maximum Enrollment: 1<br />
+						Section Seats Available: 1<br />
+						
+					</span>
+					
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24087</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=445&seq_number_key=01">CLS445</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=445&seq_number_key=01">Clinical Core Lab Prac II</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24088</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=449&seq_number_key=01">CLS449</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=CLS&crse_number=449&seq_number_key=01">Clinical Micro Lab Prac II</a></td>
+			<td>1</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>23215</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=430&seq_number_key=03">MTE430</a>
+			</td>
+			<td>03</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=430&seq_number_key=03">Clinical Microbiology</a></td>
+			<td>7</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24105</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=434&seq_number_key=01">MTE434</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=434&seq_number_key=01">Clinical Hematology</a></td>
+			<td>6</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: -1<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24104</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=436&seq_number_key=01">MTE436</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=436&seq_number_key=01">Clinical Immunohematology</a></td>
+			<td>4</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: -1<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>23216</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=436&seq_number_key=03">MTE436</a>
+			</td>
+			<td>03</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=436&seq_number_key=03">Clinical Immunohematology</a></td>
+			<td>3</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>24103</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=440&seq_number_key=01">MTE440</a>
+			</td>
+			<td>01</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=440&seq_number_key=01">Clinical Urinalysis</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: -1<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+		<tr class="list_row">
+			<td>23217</td>
+			<td>
+				<a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=442&seq_number_key=03">MTE442</a>
+			</td>
+			<td>03</td>
+			<td>Intern/Pract/Field Exp/Seminar</td>
+			<td><a href="default.asp?tck=202120&page=details&subj_code=MTE&crse_number=442&seq_number_key=03">Topics in Medical Technology</a></td>
+			<td>2</td>
+			<td></td>
+			<td>-</td>
+			<td> </td>
+			<td>Mikita, N</td>
+		</tr>
+		
+		<tr class="detail_row">
+			<td colspan="10" class="detail_cell">
+				<span class="course_enrollment">
+					
+					<span class="course_seats">
+						<!--Seats Available:  of 0-->
+						Maximum Enrollment: 0<br />
+						Section Seats Available: 0<br />
+						
+					</span>
+					
+							<span class="course_full">Contact Department</span>
+						
+				</span>
+				&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<br>
+					
+				<span class="course_messages">
+					
+				</span>
+				<span class="course_term">
+					Full Term
+				</span>
+				<span class="course_dates">
+					<span class="course_begins">Course Begins: 1/19/2021</span>
+					<span class="course_ends">Course Ends: 5/7/2021</span>
+				</span>
+			</td>
+		</tr>
+		
+</table>
+	
+	</div>
+	
+	<div id="loading" title="Loading...">Loading, please wait...</div>
+	<script type="text/javascript">
+	//<!--
+	$(function() {
+		$("#loading").dialog({'modal': true, 'closeOnEscape': false, 'draggable': false, 'resizable': false, 'autoOpen': false });
+	});
+	//-->
+	</script>
+</body>
